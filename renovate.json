@@ -2,5 +2,16 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+  "major": {
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "groupName": "webpack",
+      "matchPackageNames": ["webpack"],
+      "matchPackagePrefixes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    }
   ]
 }
