@@ -9,9 +9,13 @@
   "packageRules": [
     {
       "groupName": "webpack",
-      "matchPackageNames": ["webpack"],
-      "matchPackagePrefixes": ["minor", "patch", "pin", "digest"],
+      "matchPackagePrefixes": ["webpack"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
-    }
+    },
+    {
+      "groupName": "postcss",
+      "matchPackagePrefixes": ["postcss"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    },
   ]
 }
